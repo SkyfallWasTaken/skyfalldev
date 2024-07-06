@@ -1,21 +1,23 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
-import Twitter from './socialIcons/Twitter.astro';
-import GitHub from './socialIcons/GitHub.astro';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import Twitter from "./socialIcons/Twitter.astro";
+import GitHub from "./socialIcons/GitHub.astro";
 ---
 
 <header class="w-full">
-	<nav class="px-3 py-2 flex items-center gap-2 w-full border-b-[2px] border-surface0 shadow-sm bg-crust text-text">
-		<h2 class="font-semibold mx-3"><a href="/">{SITE_TITLE}</a></h2>
-		<div class="flex flew-row gap-3">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<div class="flex flex-row gap-3 ml-auto m-2">
-			<Twitter />
-			<GitHub />
-		</div>
-	</nav>
+  <nav
+    class="px-3 py-2 flex items-center gap-2 w-full border-b-[2px] border-surface0 shadow-sm bg-crust text-text"
+  >
+    <h2 class="font-semibold mx-3"><a href="/">{SITE_TITLE}</a></h2>
+    <div class="flex flew-row gap-3">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+    <div class="flex flex-row gap-3 ml-auto m-2">
+      <Twitter />
+      <GitHub />
+    </div>
+  </nav>
 </header>
