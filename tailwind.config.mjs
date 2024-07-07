@@ -6,22 +6,22 @@ export default {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': theme('colors.pink[800]'),
-            '--tw-prose-headings': theme('colors.text'),
-            '--tw-prose-links': theme('colors.text'),
-            '--tw-prose-hr': theme('colors.pink[300]'),
-            '--tw-prose-quotes': theme('colors.text'),
-            '--tw-prose-kbd': theme("colors.text"),
+            "--tw-prose-body": theme("colors.pink[800]"),
+            "--tw-prose-headings": theme("colors.text"),
+            "--tw-prose-links": theme("colors.text"),
+            "--tw-prose-hr": theme("colors.pink[300]"),
+            "--tw-prose-quotes": theme("colors.text"),
+            "--tw-prose-kbd": theme("colors.text"),
 
-            '--tw-prose-quote-borders': theme('colors.pink[300]'),
-            '--tw-prose-captions': theme('colors.pink[700]'),
-            '--tw-prose-code': theme('colors.text'),
-            '--tw-prose-pre-code': theme('colors.text'),
-            '--tw-prose-pre-bg': theme('colors.pink[900]'),
+            "--tw-prose-quote-borders": theme("colors.pink[300]"),
+            "--tw-prose-captions": theme("colors.pink[700]"),
+            "--tw-prose-code": theme("colors.text"),
+            "--tw-prose-pre-code": theme("colors.text"),
+            "--tw-prose-pre-bg": theme("colors.pink[900]"),
           },
         },
       }),
-    }
+    },
   },
   plugins: [
     require("@catppuccin/tailwindcss")({
