@@ -5,7 +5,7 @@ const { class: className, ...rest } = Astro.props;
 
 <button
   class={twMerge(
-    "shadow-sm px-3 py-2 rounded-md bg-surface0 hover:bg-surface1 transition",
+    "shadow-sm px-3 py-2 rounded-md bg-surface0 hover:bg-surface1 border-surface1 border-[1px] transition",
     className,
   )}
   {...rest}
