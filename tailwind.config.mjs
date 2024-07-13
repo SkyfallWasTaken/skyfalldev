@@ -7,6 +7,7 @@ export default {
         DEFAULT: {
           css: {
             "--tw-prose-body": theme("colors.pink[800]"),
+            "--tw-prose-bold": theme("colors.text"),
             "--tw-prose-headings": theme("colors.text"),
             "--tw-prose-links": theme("colors.text"),
             "--tw-prose-hr": theme("colors.pink[300]"),
