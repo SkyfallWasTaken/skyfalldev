@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Button from "../components/ui/Button.astro";
+import Hr from "../components/ui/Hr.astro";
+import GitHubHeatmap from "../components/homepage/GitHubHeatmap.svelte";
 ---
 
 <!doctype html>
@@ -25,6 +27,10 @@ import Button from "../components/ui/Button.astro";
         <div class="flex flex-row gap-2">
           <a href="/blog"><Button>Read my blog</Button></a>
         </div>
+      </div>
+      <Hr />
+      <div class="flex flex-col gap-4 w-full lg:w-[40%]">
+        <GitHubHeatmap client:load />
       </div>
     </main>
     <Footer />
