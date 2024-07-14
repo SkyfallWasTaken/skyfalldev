@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Button from "../components/ui/Button.astro";
 import Hr from "../components/ui/Hr.astro";
-import GitHubHeatmap from "../components/homepage/GitHubHeatmap.svelte";
+/* import GitHubHeatmap from "../components/homepage/GitHubHeatmap.svelte"; */
 ---
 
 <!doctype html>
@@ -30,7 +30,9 @@ import GitHubHeatmap from "../components/homepage/GitHubHeatmap.svelte";
       </div>
       <Hr />
       <div class="flex flex-col gap-4 w-full lg:w-[40%]">
-        <GitHubHeatmap client:load />
+        <!-- <GitHubHeatmap client:load /> -->
+        <p class="font-semibold">This site is a work in progress.</p>
+        <p>Please excuse the mess!</p>
       </div>
     </main>
     <Footer />

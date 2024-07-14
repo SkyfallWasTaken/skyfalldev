@@ -9,8 +9,8 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   site: "https://skyfall.dev",
   integrations: [mdx(), sitemap(), tailwind(), svelte()],
-  output: "hybrid", // or 'server'
+  /* output: "hybrid", // or 'server'
   experimental: {
     actions: true,
-  },
+  }, */
 });
