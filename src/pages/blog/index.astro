@@ -5,7 +5,7 @@ import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -58,11 +58,12 @@ let imagesLoadedEagerly = 0;
                     {() => {
                       if (heroImagePromise) {
                         return (
-                          <Image
+                          <Picture
                             width={720}
                             height={360}
                             src={heroImagePromise()}
                             loading={shouldLoadEagerly ? "eager" : "lazy"}
+                            formats={['avif', 'webp']}
                             class="rounded-md mb-3"
                             alt=""
                           />
