@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/svelte": "^5.6.0",
     "@fontsource-variable/plus-jakarta-sans": "^5.0.21",
+    "@sentry/astro": "^8.17.0",
     "activity-calendar-widget": "^0.0.14",
     "octokit": "^4.0.2",
     "svelte": "^4.2.18",
@@ -28,6 +29,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.13",
     "astro": "^4.11.5",
+    "dotenv": "^16.4.5",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "tailwindcss": "^3.4.4",
