@@ -36,7 +36,7 @@ let imagesLoadedEagerly = 0;
 
               let heroImage = post.data.heroImage;
 
-              let heroImagePromise;
+              let heroImagePromise: any;
               if (heroImage) {
                 /** @type {Record<string, () => Promise<{default: import('astro').ImageMetadata}>>} */
                 const images: any = import.meta.glob(
