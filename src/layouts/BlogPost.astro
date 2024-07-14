@@ -40,11 +40,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             {
               heroImage && (
                 <Image
-                  width={1280}
-                  height={720}
                   src={heroImage}
                   loading="eager"
-                  class="article-banner my-10 aspect-ratio-[16/9] shadow-lg w-max rounded-lg"
                   alt=""
                 />
               )
@@ -61,5 +58,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       </article>
     </main>
     <Footer />
+    <style>
+      img {
+        @apply my-10 shadow-lg w-max rounded-lg;
+      }
+    </style>
   </body>
 </html>
