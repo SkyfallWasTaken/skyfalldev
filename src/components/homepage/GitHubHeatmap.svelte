@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { actions } from "astro:actions";
+  /* import { actions } from "astro:actions"; */
   import ActivityCalendarWidget from "activity-calendar-widget/svelte";
 </script>
 
