@@ -52,7 +52,7 @@ if (heroImage) {
           <!-- Image -->
           <div class="w-[1/4] flex justify-center">
             {
-              heroImage && (
+              heroImagePromise && (
                 <Image src={heroImagePromise()} loading="eager" alt="" />
               )
             }
