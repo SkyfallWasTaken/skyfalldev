@@ -34,16 +34,34 @@ let imagesLoadedEagerly = 0;
                 imagesLoadedEagerly += 1;
               }
 
+              let heroImage = post.data.heroImage;
+
+              let heroImagePromise;
+              if (heroImage) {
+                /** @type {Record<string, () => Promise<{default: import('astro').ImageMetadata}>>} */
+                const images: any = import.meta.glob(
+                  "/src/assets/*.{jpeg,jpg,png,gif}",
+                );
+
+                if (!images[heroImage]) {
+                  throw new Error(
+                    `"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+                  );
+                }
+
+                heroImagePromise = images[heroImage];
+              }
+
               return (
                 <li>
                   <a href={`/blog/${post.slug}/`}>
                     {() => {
-                      if (post.data.heroImage) {
+                      if (heroImagePromise) {
                         return (
                           <Image
                             width={720}
                             height={360}
-                            src={post.data.heroImage}
+                            src={heroImagePromise()}
                             loading={shouldLoadEagerly ? "eager" : "lazy"}
                             class="rounded-md mb-3"
                             alt=""
